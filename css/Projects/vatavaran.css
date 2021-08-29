@@ -668,3 +668,136 @@ svg {
   background-color: rgb(250, 196, 48);
   color: black;
 }
+
+
+
+
+
+
+
+/* start 2 projects*/
+
+.otherprojects .heading {
+  font-size: 6vmin;
+  color: rgb(243, 221, 20);
+}
+
+.otherprojects .btn {
+  font-size: 6vmin;
+}
+
+.otherprojects .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.otherprojects .box-container .box {
+  margin: 2rem;
+  padding: 2rem;
+  flex: 1 1 40rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.otherprojects .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.otherprojects .box-container .box h3 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  opacity: 0;
+}
+
+.otherprojects .box-container .box:hover h3 {
+  top: 50%;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.otherprojects .box-container .eventbox {
+  background: #fff;
+  width: 35rem;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow:0.3rem 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.otherprojects .box-container .eventbox:hover{
+  box-shadow:0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(4px)
+}
+
+.otherprojects .box-container .eventbox img {
+  padding: 1vmin;
+  width: 80%;
+}
+
+.otherprojects .box-container .eventbox h3 {
+  padding-top: 1vmin;
+  text-align: center;
+  font-size: 5vmin;
+}
+
+.dark-mode .otherprojects .box-container .eventbox {
+ 
+  background: rgb(17, 17, 17);
+  width: 35rem;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow:0.2rem 0.2rem 0.2rem 0.2rem rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+}
+
+.dark-mode .otherprojects .box-container .eventbox:hover{
+  box-shadow:0.1rem 0.1rem 0.1rem 0.1rem rgb(255, 255, 255);
+  transform: translateY(4px)
+}
+
+
+.otherprojects .box-container .box::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.2s linear;
+}
+
+.otherprojects .box-container .box:hover::before {
+  top: 0;
+}
+#vatavaran{
+  text-decoration: none;
+  color: black;
+}
+#sampuran{
+  text-decoration: none;
+  color: black;
+}
+.dark-mode #vatavaran{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.dark-mode #sampuran{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+/*end 2 projects*/
